@@ -4,6 +4,7 @@ go 1.23.0
 
 require (
 	connectrpc.com/connect v1.16.2
+	ebay.com/security-platform/cal-client-go v0.0.0-20200821104234-48b6647aa5a5
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/buger/jsonparser v1.1.1
 	github.com/cespare/xxhash/v2 v2.3.0
@@ -72,10 +73,12 @@ require (
 	github.com/klauspost/compress v1.17.9
 	github.com/mark3labs/mcp-go v0.29.0
 	github.com/minio/minio-go/v7 v7.0.74
+	github.com/opentracing/opentracing-go v1.2.0
 	github.com/posthog/posthog-go v1.5.5
 	github.com/pquerna/cachecontrol v0.2.0
 	github.com/santhosh-tekuri/jsonschema/v6 v6.0.1
 	github.com/tonglil/opentelemetry-go-datadog-propagator v0.1.3
+	github.com/uber/jaeger-client-go v2.25.0+incompatible
 	github.com/wundergraph/astjson v0.0.0-20250106123708-be463c97e083
 	go.uber.org/goleak v1.3.0
 	go.uber.org/ratelimit v0.3.1
@@ -143,6 +146,7 @@ require (
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/twmb/franz-go/pkg/kmsg v1.7.0 // indirect
+	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
 	github.com/vektah/gqlparser/v2 v2.5.16 // indirect
 	github.com/yosida95/uritemplate/v3 v3.0.2 // indirect
 	github.com/yuin/gopher-lua v1.1.1 // indirect
@@ -162,3 +166,4 @@ require (
 // Use what is best for your personal workflow. See CONTRIBUTING.md for more information
 
 // replace github.com/wundergraph/graphql-go-tools/v2 => ../../graphql-go-tools/v2
+replace ebay.com/security-platform/cal-client-go => github.corp.ebay.com/security-platform/cal-client-go v0.0.0-20200821104234-48b6647aa5a5
